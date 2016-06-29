@@ -33,7 +33,7 @@ func (s Stack) IsEmpty() bool {
 }
 
 func (s Stack) IsFull() bool {
-	return s.top > s.Size()
+	return s.top >= s.Size()
 }
 
 func (s *Stack) Push(v int) bool {

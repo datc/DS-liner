@@ -27,7 +27,9 @@ func TestPush(t *testing.T) {
 	v, ok := stack.Seek()
 	Equal(t, 2, v, true, ok)
 	Equal(t, 2, stack.Length())
-
+	ok = stack.Push(3)
+	Equal(t, false, ok)
+	Equal(t, 2, stack.Length())
 	v, ok = stack.Pop()
 	Equal(t, 2, v, true, ok)
 	Equal(t, 1, stack.Length())
