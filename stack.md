@@ -1,26 +1,26 @@
 # 栈（线性结构）
 
 
- - Init(size int)
+ - Init(int size)
   初始化大小 
 
- - Size() int
+ - int Size()
   查看容量
 
- - Length() int
+ - int Length()
   查看长度
  
- - IsEmpty() bool
+ - bool IsEmpty()
   是否为空
  
- - IsFull() bool
+ - bool IsFull()
   是否已满
  
- - Push(v int) bool
+ - bool Push(v int)
   压栈
  
- - Pop() (int, bool)
+ - int Pop(bool* ok)
   弹栈
  
- - Seek() (int, bool)
+ - int Seek(bool* ok)
   查看栈顶元素
