@@ -1,7 +1,7 @@
 package stack_go
 
 import (
-	. "github.com/bmizerany/assert"
+	. "github.com/toukii/equal"
 	"testing"
 )
 
@@ -25,15 +25,12 @@ func TestPush(t *testing.T) {
 	stack.Push(2)
 	Equal(t, 2, stack.Length())
 	v, ok := stack.Seek()
-	Equal(t, 2, v, true, ok)
-	Equal(t, 2, stack.Length())
+	Equal(t, 2, v, true, ok, 2, stack.Length())
 	ok = stack.Push(3)
-	Equal(t, false, ok)
-	Equal(t, 2, stack.Length())
+	Equal(t, 2, stack.Length(), false, ok)
 	v, ok = stack.Pop()
-	Equal(t, 2, v, true, ok)
-	Equal(t, 1, stack.Length())
+	Equal(t, 2, v, true, ok, 1, stack.Length())
 }
 
-// 测试用例相互依赖，重用测试用例
+// 测试用例相互依赖，重用测试用例 -- 测试用例相互调用
 // 一次调用Assert，判断多个条件：Equal(t, 2, v, true, ok)
