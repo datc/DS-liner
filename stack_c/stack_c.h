@@ -17,7 +17,7 @@ struct Stack
 
 void Display(struct Stack stk);
 int before(int * a,int* b);
-int index(int * base,int length);
+int indexing(int * base,int length);
   
 void Init(struct Stack * stk,int size);
 int Size(struct Stack stk);

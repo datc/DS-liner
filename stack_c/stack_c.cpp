@@ -27,7 +27,7 @@ int before(int * a,int* b){
 /*
 * Go 不能直接索引，需要提供该函数
 */
-int index(int * base,int length){
+int indexing(int * base,int length){
 	return base[length];
 }
 

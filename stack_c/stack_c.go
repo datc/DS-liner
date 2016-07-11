@@ -23,7 +23,7 @@ func Display(stk C.struct_Stack) {
 			break
 		}
 		length--
-		fmt.Printf("%d ", C.index(stk.base, length))
+		fmt.Printf("%d ", C.indexing(stk.base, length))
 	}
 	fmt.Println("]")
 }
