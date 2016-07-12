@@ -40,7 +40,7 @@ func TestStack() {
 func TestInit() {
 	var stk C.struct_Stack
 	C.Init(&stk, 3)
-	Equal(nil, C.int(3), C.Size(stk))
+	Equal(nil, C.int(3), C.Capacity(stk))
 	Equal(nil, C.bool(1), C.IsEmpty(stk))
 }
 

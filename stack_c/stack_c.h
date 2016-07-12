@@ -20,7 +20,7 @@ int before(int * a,int* b);
 int indexing(int * base,int length);
 
 void Init(struct Stack * stk,int size);
-int Size(struct Stack stk);
+int Capacity(struct Stack stk);
 int Length(struct Stack stk);
 bool IsEmpty(struct Stack stk);
 bool IsFull(struct Stack stk);

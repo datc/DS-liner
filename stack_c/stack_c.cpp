@@ -39,7 +39,7 @@ void Init(struct Stack * stk,int size){
 }
 
 // 栈容量
-int Size(Stack stk){
+int Capacity(Stack stk){
 	return stk.size;
 }
 
@@ -55,7 +55,7 @@ bool IsEmpty(struct Stack stk){
 
 // 是否满栈
 bool IsFull(struct Stack stk){
-	if (Length(stk) >= Size(stk))
+	if (Length(stk) >= Capacity(stk))
 	{
 		return true;
 	}
