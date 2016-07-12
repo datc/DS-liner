@@ -33,10 +33,7 @@ func TestStack() {
 	C.Init(&stk, 11)
 	C.Display(stk)
 	ok := C.Push(&stk, 1)
-	fmt.Println("ok:", ok)
-	if ok == 1 {
-		fmt.Println("...")
-	}
+	Equal(nil, C.int(1), C.Length(stk), C.bool(1), ok)
 	C.Display(stk)
 }
 
@@ -65,5 +62,5 @@ func TestPush() {
 func main() {
 	TestInit()
 	TestPush()
-	// TestStack()
+	TestStack()
 }
