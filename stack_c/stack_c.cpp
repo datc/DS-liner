@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-extern "C" {  
+extern "C" {
 
 #define true 1
 #define false 0
@@ -95,5 +95,5 @@ if (IsEmpty(stk))
 	*ok = true;
 	return *(stk.top - 1);
 }
-  
-}  
+
+}
