@@ -20,7 +20,7 @@ func (s *Stack) Init(size int) {
 	s.data = make([]int, size, size)
 }
 
-func (s Stack) Size() int {
+func (s Stack) Capacity() int {
 	return cap(s.data)
 }
 
@@ -33,7 +33,7 @@ func (s Stack) IsEmpty() bool {
 }
 
 func (s Stack) IsFull() bool {
-	return s.top >= s.Size()
+	return s.top >= s.Capacity()
 }
 
 func (s *Stack) Push(v int) bool {

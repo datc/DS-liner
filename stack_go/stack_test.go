@@ -15,7 +15,7 @@ func init() {
 
 func TestInit(t *testing.T) {
 	stack.Init(3)
-	Equal(t, 3, stack.Size())
+	Equal(t, 3, stack.Capacity())
 	Equal(t, true, stack.IsEmpty())
 }
 
