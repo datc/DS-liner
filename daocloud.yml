@@ -1,0 +1,22 @@
+version: 2.0
+
+test:  
+  image: daocloud/ci-golang:1.4
+
+  env:
+    - GOPATH = /app/gopath/
+    - PATH = $PATH:$GOPATH/bin
+
+  install:
+    - echo $PATH
+    - echo $GOPATH
+    - go get -u github.com/shaalx/wall
+    - go get -u github.com/everfore/rpcsv
+
+  script:
+    - go version
+    - pwd
+    - ls
+    # - go test -v
+
+    - go run main.go
