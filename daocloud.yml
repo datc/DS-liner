@@ -10,8 +10,8 @@ test:
   install:
     - echo $PATH
     - echo $GOPATH
-    - go get -u github.com/shaalx/wall
-    - go get -u github.com/everfore/rpcsv
+    - go get -u github.com/toukii/assert
+    - go get -u github.com/toukii/equal
 
   script:
     - go version
@@ -19,4 +19,4 @@ test:
     - ls
     # - go test -v
 
-    - go run main.go
+    - ./test.sh
