@@ -4,7 +4,7 @@
  - Init(size int)
   初始化大小 
 
- - Size() int
+ - Capacity() int
   查看容量
 
  - Length() int
