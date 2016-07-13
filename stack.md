@@ -1,4 +1,6 @@
 # 栈（线性结构）
+ 
+ - test
 
 
  - Init(int size)
