@@ -27,6 +27,7 @@ bool IsFull(struct Stack stk);
 bool Push(struct Stack * stk,int v);
 int Pop(struct Stack * stk,bool * ok);
 int Seek(struct Stack stk,bool * ok);
+void Destory(struct Stack stk);
 
 #ifdef __cplusplus
 }

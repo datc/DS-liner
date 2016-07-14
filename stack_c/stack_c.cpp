@@ -96,4 +96,12 @@ if (IsEmpty(stk))
 	return *(stk.top - 1);
 }
 
+void Destory(struct Stack stk){
+	delete stk.base;
+	stk.base = NULL;
+	stk.top = NULL;
+	stk.size = 0;
+	cout<<"stack destoried, stack.base is NULL:"<<(stk.base==NULL)<<endl;
+}
+
 }

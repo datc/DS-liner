@@ -35,6 +35,7 @@ func TestStack() {
 	ok := C.Push(&stk, 1)
 	Equal(nil, C.int(1), C.Length(stk), C.bool(1), ok)
 	C.Display(stk)
+	C.Destory(stk)
 }
 
 func TestInit() {
@@ -42,6 +43,7 @@ func TestInit() {
 	C.Init(&stk, 3)
 	Equal(nil, C.int(3), C.Capacity(stk))
 	Equal(nil, C.bool(1), C.IsEmpty(stk))
+	C.Destory(stk)
 }
 
 func TestPush() {
@@ -57,6 +59,7 @@ func TestPush() {
 	Equal(nil, C.int(2), C.Length(stk), C.bool(0), ok)
 	v = C.Pop(&stk, &ok)
 	Equal(nil, C.int(2), v, C.bool(1), ok, C.int(1), C.Length(stk))
+	C.Destory(stk)
 }
 
 func main() {
